@@ -47,7 +47,7 @@ public class Homecontroller {
 	@PostMapping("/AddEmployee")
 	public String addEmployee(@RequestBody Employee employee){
 		emprepo.save(employee);
-		return "Employee Added Successfully....";
+		return "Employee Added in DB Successfully....";
 	}
 	
 }
